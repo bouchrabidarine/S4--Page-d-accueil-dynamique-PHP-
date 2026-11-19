@@ -1,6 +1,4 @@
-<?php
-include "data/projets.php";
-?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -8,36 +6,38 @@ include "data/projets.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header>
         <h1>Mon Portfolio</h1>
-        <p>Découvrez mes projets web</p>
     </header>
 
     <main>
-        <h2>Mes projets</h2>
+        <div class="acceuil">  
+              <h2>
+             <span>Développer & Partager</span> 
+            </h2>
+            <p>Je suis une développeuse web débutante. Je suis actuellement en formation <br>
+                 et j'apprends à créer des sites web.</p>
+</div>
+      
+        <h3>Mes projets</h3>
 
         <section class="projets">
 
             <?php foreach ($projets as $pro): ?>
 
-                <article class="carte">
-
-                    <img
-                        src="<?= htmlspecialchars($pro["image"]) ?>"
-                        alt="<?= htmlspecialchars($pro["titre"]) ?>"
-                    >
-
+            
                     <div class="contenu">
 
                         <?php if ($pro["featured"] == true): ?>
                             <small class="badge">⭐ À la une</small>
-                        <?php endif; ?>
-
+                        <?php endif; ?> <br>
+<span class="badge<?php if ($pro["color"] == "bleu"): ?> bleu <?php else: ?> vert <?php endif; ?>">
+ <?= htmlspecialchars($pro[ 'categorie_libelle'])?></span>
                         <h3>
                             <?= htmlspecialchars($pro["titre"]) ?>
                         </h3>
@@ -46,7 +46,6 @@ include "data/projets.php";
                             <?= htmlspecialchars($pro["description"]) ?>
                         </p>
 
-                        <a href="#contact">Voir le projet</a>
 
                     </div>
 
