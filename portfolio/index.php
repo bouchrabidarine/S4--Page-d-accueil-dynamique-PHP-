@@ -35,7 +35,7 @@
 
                         <?php if ($pro["featured"] == true): ?>
                             <small class="badge">⭐ À la une</small>
-                        <?php endif; ?> <br>
+                        <?php endif; ?> <br> <br>
 <span class="badge<?php if ($pro["color"] == "bleu"): ?> bleu <?php else: ?> vert <?php endif; ?>">
  <?= htmlspecialchars($pro[ 'categorie_libelle'])?></span>
                         <h3>
@@ -45,11 +45,13 @@
                         <p>
                             <?= htmlspecialchars($pro["description"]) ?>
                         </p>
-
+<div class="date">
+    <p> <?= date('d m y',strtotime($pro['date_creation']))?></p>
+</div>
 
                     </div>
 
-                </article>
+                
 
             <?php endforeach; ?>
 

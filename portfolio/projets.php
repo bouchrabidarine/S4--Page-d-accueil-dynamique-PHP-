@@ -7,7 +7,6 @@ $projets = [
         "description" => "Une application qui aide les élèves à comprendre leurs cours.",
         "featured" => true,
         'categorie_libelle' => 'Développement',
-        'contenu' => 'Une interface belle n\'est pas suffisante...',
         'date_creation' => '2026-02-14',
         "color"=>"bleu"
 
@@ -19,7 +18,6 @@ $projets = [
         "description" => "Un site web pour présenter mes compétences et mes projets.",
         "featured" => false,
         'categorie_libelle' => 'Design UI/UX',
-        'contenu' => 'Découvrez les concepts fondamentaux de la méthode Atomic Design...',
         'date_creation' => '2026-11-12',
         "color"=>"vert"
 
@@ -31,7 +29,6 @@ $projets = [
         "description" => "Une plateforme pour acheter et vendre des produits.",
         "featured" => true,
         'categorie_libelle' => 'Design UI/UX',
-        'contenu' => 'Une interface belle n\'est pas suffisante...',
         'date_creation' => '2026-03-21',
          "color"=>"vert"
 

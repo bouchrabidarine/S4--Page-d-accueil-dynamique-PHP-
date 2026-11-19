@@ -24,7 +24,7 @@ span{
 .acceuil{
     text-align: center;
     margin-top: 20px;
-    padding: 20px;
+    padding: 50px;
 }
 .acceuil p{
     color: gray;
@@ -41,7 +41,7 @@ h3{
     background-color: white;
     border-radius: 12px;
     padding: 20px;
-    width: 250px;
+    width: 500px;
     margin-top: 20px;
     margin-inline:auto;
   
@@ -55,9 +55,11 @@ h3{
 .bleu{
     background-color: blue;
 }
-.rose {
-    background-color: pink;
-}
 .vert{
     background-color: green;
+}
+.date{
+    margin-top: 20px;
+    border-top: 1px black solid ;
+    font-size: 10px;
 }
